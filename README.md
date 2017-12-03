@@ -51,10 +51,10 @@ $ sudo /etc/shells >> /usr/local/bin/fish
 $ chsh -s /usr/local/bin/fish
 $ fisher install omf/theme-bobthefish
 $ git clone git@github.com:powerline/fonts.git
-$ cd fonts | fonts/install.sh
-$ rm -rf fonts
-// iTerm2でのフォント設定 → D2Coding for Powerline
+$ fonts/install.sh
+$ rm -rf fonts //iTerm2でフォント設定を行う(D2Coding for Powerline)
 $ cp config.fish ~/.config/fish/config.fish
+$ . ~/.config/fish/config.fish
 ```
 
 ### 3. Atom

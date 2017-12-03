@@ -33,6 +33,7 @@ brew "homebrew/php/php71"
 cask "atom"
 cask "docker"
 cask "google-chrome"
+cask "google-japanese-ime"
 cask "shiftit"
 mas "CotEditor", id: 1024640650
 mas "GarageBand", id: 682658836
