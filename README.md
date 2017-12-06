@@ -46,13 +46,26 @@ $ brew bundle
 ```
 
 ### 2. fish
+#### 1. `/usr/local/bin/fish` を追記し、初期 shell を変更
 ```
-$ sudo /etc/shells >> /usr/local/bin/fish
+$ sudo vim /etc/shells
 $ chsh -s /usr/local/bin/fish
+```
+
+#### 2. Powerline テーマを導入
+```
 $ fisher install omf/theme-bobthefish
-$ git clone git@github.com:powerline/fonts.git
+```
+
+#### 3. font インストール後、iTerm2でフォント設定を行う(D2Coding for Powerline)
+```
+$ git clone https://github.com/powerline/fonts.git
 $ fonts/install.sh
-$ rm -rf fonts //iTerm2でフォント設定を行う(D2Coding for Powerline)
+$ rm -rf fonts
+```
+
+#### 4. fish の設定ファイルを適用
+```
 $ cp config.fish ~/.config/fish/config.fish
 $ . ~/.config/fish/config.fish
 ```
